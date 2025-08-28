@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe Check ✨ | GenZ Mood Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Vibe Check <span class="fire">✨</span></h1>
+        <p class="tagline">Track your mood, slay your day 💅</p>
+      </header>
+
+      <div class="mood-selector">
+        <h2>How you vibin' today?</h2>
+        <div class="mood-options">
+          <div class="mood-option" data-mood="lit">😎</div>
+          <div class="mood-option" data-mood="good">😊</div>
+          <div class="mood-option" data-mood="meh">😐</div>
+          <div class="mood-option" data-mood="sad">😔</div>
+          <div class="mood-option" data-mood="angy">😠</div>
+        </div>
+
+        <div style="text-align: center">
+          <button id="logMood">Log My Vibe</button>
+          <button id="analyze">Vibe Analysis</button>
+          <button id="clear">Clear History</button>
+        </div>
+      </div>
+
+      <div class="vibe-message" id="vibeMessage">
+        Select your mood and click "Log My Vibe" to start tracking!
+      </div>
+
+      <div class="stats" id="statsSection">
+        <!-- Stats will be populated by JavaScript -->
+      </div>
+
+      <div class="history">
+        <h2>Vibe History</h2>
+        <div id="moodHistory">
+          <!-- Mood entries will be added here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
